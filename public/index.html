@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Draw-Chat-App</title>
+  <!--Bootstrap section-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Personal CSS-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="titles" class="container-fluid">
+    <div class="row text-center" id="wrap-title">
+      <div class="col-md-12">
+        <h1>Draw-Chat-App</h1>
+        <h2>using Pusher</h2>
+      </div>
+    </div>
+  </header>
+  <section id="display-app" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <!--PIZARRA-->
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <h3>Board</h3>
+            </div>
+          </div>
+          <div class="row" id="sketch">
+            <div id="show-board">
+              <canvas id="board" height="325" width="745">
+
+              </canvas>
+            </div>
+            <div id="show-control">
+              <button id="save-btn" class="btn btn-default"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+              <button id="undo-btn" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+              <button id="clear" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+              <input id="color-picker" type="color">
+              <input id="brush-size" type="range" min="1" max="60" value="12">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!--CHAT-->
+        <div class="container-fluid">
+          <div class="row" id="chat-section">
+            <div class="col-md-12">
+              <div id="chat-title">
+                <h3 class="text-center">Chat</h3>
+              </div>
+              <div id="show-message" class="well">
+                <ul class="chat">
+                  <!--se agregan los mensajes por aqui-->
+                </ul>
+              </div>
+              <div id="control-chat">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="message" name="message" placeholder="Type your message here">
+                  <span class="input-group-btn">
+                    <button type="button" id="btn-send" class="btn btn-primary" name="send"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid" id="footer">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">2017 Luis Locon | Design and Code with <span class="heart">❤</span></p>
+      </div>
+    </div>
+  </footer>
+  <!-- Latest compiled and minified JavaScript & jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>

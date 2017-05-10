@@ -1,0 +1,17 @@
+{
+  "name": "app-draw-chat",
+  "version": "1.0.0",
+  "description": "Chat and draw app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "@loconluis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pusher": "^1.5.1"
+  }
+}
