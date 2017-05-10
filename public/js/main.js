@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  //USE YOUR API_KEY FROM PUSHER XXXXX
   var pusher = new Pusher('XXXXXXXXXXXXXXXXXXXX', {
       encrypted: true
     });
